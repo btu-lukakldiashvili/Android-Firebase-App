@@ -49,7 +49,7 @@ class SignUpActivity : AppCompatActivity() {
 
             auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{ task ->
                 if (task.isSuccessful){
-                    startActivity(Intent(this, LoginActivity::class.java))
+                    startActivity(Intent(this, ProfileActivity::class.java))
                     finish()
                 } else {
                     Toast.makeText(this, "${task.exception?.message}", Toast.LENGTH_SHORT).show()

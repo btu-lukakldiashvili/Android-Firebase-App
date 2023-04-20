@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
+    tools:context=".ProfileActivity">
 
 
     <LinearLayout
@@ -17,32 +16,41 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
+        <TextView
+            android:id="@+id/profileTitle_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/dark_blue"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Username"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/dark_blue"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
         <Space
             android:layout_width="match_parent"
-            android:layout_height="120pt" />
+            android:layout_height="20pt" />
 
         <Button
-            android:id="@+id/signUp_button"
+            android:id="@+id/signOut_button"
             android:layout_width="match_parent"
             android:layout_height="28pt"
             android:backgroundTint="@color/button_register"
-            android:text="Sign Up"
-            android:textColor="@color/white"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            app:cornerRadius="15pt" />
-
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10pt" />
-
-        <Button
-            android:id="@+id/forgot_button"
-            android:layout_width="match_parent"
-            android:layout_height="28pt"
-            android:backgroundTint="@color/button_register"
-            android:text="Forgot Password"
+            android:text="Sign Out"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"
